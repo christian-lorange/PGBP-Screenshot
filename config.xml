@@ -7,8 +7,8 @@
     <!-- Tool Set Version -->        
     <preference name='phonegap-version' value='cli-5.2.0' />
 
-    <name>cordova-screenshot</name>
-    <description>cordova-screenshot</description>
+    <name>PGBP cordova-screenshot</name>
+    <description>PGBP cordova-screenshot</description>
     <author href="http://bsdmasterindex.com" email="jessemonroy650@yahoo.com">Jesse Monroy</author>
 
     <!-- Target Platforms -->

@@ -1,4 +1,6 @@
-// 2016-02-25
+/*
+    2016-02-25
+*/
 var app = {
     onDeviceReady : function () {
         app.showIt('info', 'deviceready');
@@ -31,13 +33,15 @@ var app = {
     showIt : function (id, msg) {
         document.getElementById(id).innerHTML = msg;
     },
-    pluginTest() {
-        navigator.screenshot.save(function(error,res){
-          if (error){
-            app.showIt('info', error);
-          } else {
-            app.showIt('content','file:' + res.filePath);
-          }
+    pluginTest : function () {
+        document.getElementById('button').addEventListener('click', function() {
+            navigator.screenshot.save(function(error,res){
+                if (error){
+                    app.showIt('info', error);
+                } else {
+                    app.showIt('content','file:' + res.filePath);
+                }
+            });
         });
     }
 };
